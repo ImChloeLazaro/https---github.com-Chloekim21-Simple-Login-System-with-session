@@ -15,7 +15,7 @@ if (isset($_POST['login'])) {
                 $_SESSION['name'] = $row['name'];
                 $_SESSION['pass'] = $row['pass'];
                 $_SESSION['status'] = true;
-                header("location:index.php");
+                header("location:home.php");
             }
             echo "<script>alert('Username or password is wrong')</script>";
         }
